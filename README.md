@@ -5,6 +5,9 @@ Scripts para configurar un VPS Ubuntu desde cero.
 
 Ejecutar como root
 
+
+sudo bash ./02-harden-ssh-and-firewall.sh
+
 **Orden de ejecución (como root):**
 
 1. `./01-create-sudo-user.sh` → crea usuario + añade tu clave pública
