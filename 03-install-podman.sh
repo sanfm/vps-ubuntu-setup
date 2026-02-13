@@ -3,10 +3,10 @@ set -euo pipefail
 
 set -x
 
-echo "=== Instalando Docker (método oficial) ==="
+echo "=== Instalando Podman ==="
 
 apt-get update
-apt-get -y install podman
+apt-get -y install podman podman-compose
 
 echo ""
 echo "✅ Podman instalado"
