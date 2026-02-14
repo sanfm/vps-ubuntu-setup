@@ -13,7 +13,7 @@ echo ""
 
 # ─── 1. Preguntar nombre de usuario ──────────────────────────────────────
 while true; do
-    read -r -p "Nombre de usuario a crear (recomendado: 3-12 letras, sin espacios): " NEW_USER
+    read -r -p "Nombre de usuario a crear (recomendado: 2-12 letras, sin espacios): " NEW_USER
     NEW_USER=$(echo "$NEW_USER" | tr -d '[:space:]' | tr '[:upper:]' '[:lower:]')
 
     if [[ -z "$NEW_USER" ]]; then
@@ -21,7 +21,7 @@ while true; do
         continue
     fi
 
-    if [[ ${#NEW_USER} -lt 3 || ${#NEW_USER} -gt 16 ]]; then
+    if [[ ${#NEW_USER} -lt 2 || ${#NEW_USER} -gt 16 ]]; then
         echo "→ El nombre debe tener entre 3 y 16 caracteres."
         continue
     fi
