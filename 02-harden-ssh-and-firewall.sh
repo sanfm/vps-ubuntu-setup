@@ -4,7 +4,7 @@ set -euo pipefail
 # NEW_SSH_PORT=9922
 NEW_USER="fm"          # mismo que en el script 01
 
-set -x
+# set -x
 
 # Añadir clave pública (interactivo)
 echo ""
